@@ -8,7 +8,7 @@ import co.id.aminfaruq.core.R
 import co.id.aminfaruq.core.domain.model.Categories
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_categories.view.*
-import java.util.ArrayList
+import java.util.*
 
 class CategoriesAdapter : RecyclerView.Adapter<CategoriesAdapter.ViewHolder>() {
 

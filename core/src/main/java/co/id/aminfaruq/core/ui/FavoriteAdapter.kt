@@ -8,7 +8,7 @@ import co.id.aminfaruq.core.R
 import co.id.aminfaruq.core.domain.model.DetailMeal
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_recycler_meal.view.*
-import java.util.ArrayList
+import java.util.*
 
 class FavoriteAdapter(private val onItemClick: OnItemClick) :  RecyclerView.Adapter<FavoriteAdapter.ViewHolder>() {
 

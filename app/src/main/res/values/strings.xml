@@ -9,5 +9,5 @@
     <string name="youtube">YOUTUBE</string>
     <string name="source">SOURCE</string>
     <string name="title_search">Search</string>
-    <string name="categories">Categories</string>
+    <string name="no_data">No Data</string>
 </resources>

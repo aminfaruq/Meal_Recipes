@@ -2,7 +2,6 @@ package co.id.aminfaruq.core.domain.repository
 
 import co.id.aminfaruq.core.data.source.local.entity.DetailMealEntity
 import co.id.aminfaruq.core.domain.model.DetailMeal
-import co.id.aminfaruq.core.domain.model.Meals
 import io.reactivex.Single
 
 interface DetailMealRepository {

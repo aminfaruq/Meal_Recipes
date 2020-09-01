@@ -1,9 +1,11 @@
 package co.id.aminfaruq.core.data.source.local.room
 
 import androidx.lifecycle.LiveData
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
 import co.id.aminfaruq.core.data.source.local.entity.DetailMealEntity
-import co.id.aminfaruq.core.domain.model.DetailMeal
 import io.reactivex.Single
 
 @Dao

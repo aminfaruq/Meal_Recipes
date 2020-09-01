@@ -1,16 +1,11 @@
 package co.id.aminfaruq.mealrecipes.ui.detail
 
 import androidx.lifecycle.MutableLiveData
-import co.id.aminfaruq.core.data.mapper.entity.ItemDetailEntityMapper
-import co.id.aminfaruq.core.data.source.local.room.MealsDao
 import co.id.aminfaruq.core.domain.model.DetailMeal
 import co.id.aminfaruq.core.domain.usecase.DetailMealUseCase
 import co.id.aminfaruq.core.ui.BaseViewModel
 import co.id.aminfaruq.core.utils.RxUtils
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import java.util.concurrent.Executor
 
 class DetailMealVM(
     private val detailMealUseCase: DetailMealUseCase

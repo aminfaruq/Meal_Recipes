@@ -3,7 +3,6 @@ package co.id.aminfaruq.core.domain.usecase
 import co.id.aminfaruq.core.data.source.local.entity.DetailMealEntity
 import co.id.aminfaruq.core.domain.model.DetailMeal
 import co.id.aminfaruq.core.domain.repository.DetailMealRepository
-import io.reactivex.Single
 
 class DetailMealInteractor(private val detailMealRepository: DetailMealRepository) :
     DetailMealUseCase {

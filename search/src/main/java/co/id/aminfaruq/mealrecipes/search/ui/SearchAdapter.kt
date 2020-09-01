@@ -9,7 +9,7 @@ import co.id.aminfaruq.core.domain.model.Search
 import co.id.aminfaruq.mealrecipes.search.R
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_search_meals.view.*
-import java.util.ArrayList
+import java.util.*
 
 class SearchAdapter(private val onItemClick: OnItemClick) :
     RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
@@ -38,7 +38,7 @@ class SearchAdapter(private val onItemClick: OnItemClick) :
         holder.bind(data)
     }
 
-    inner class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
         fun bind(data: Search) {
             with(itemView) {

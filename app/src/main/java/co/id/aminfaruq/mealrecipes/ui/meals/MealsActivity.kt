@@ -1,10 +1,10 @@
 package co.id.aminfaruq.mealrecipes.ui.meals
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import co.id.aminfaruq.core.domain.model.Categories
@@ -13,10 +13,8 @@ import co.id.aminfaruq.core.ui.MealsAdapter
 import co.id.aminfaruq.core.utils.isNetworkAvailable
 import co.id.aminfaruq.mealrecipes.R
 import co.id.aminfaruq.mealrecipes.ui.detail.DetailMealActivity
-import co.id.aminfaruq.mealrecipes.ui.favorite.FavoriteActivity
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_meals.*
-import kotlinx.android.synthetic.main.categories_main.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.koin.android.ext.android.inject
 

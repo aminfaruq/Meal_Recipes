@@ -1,7 +1,5 @@
 package co.id.aminfaruq.core.domain.model
 
-import com.google.gson.annotations.SerializedName
-
 data class Search (
 
     val strIngredient10: String? = null,

@@ -8,7 +8,6 @@
     tools:context=".ui.detail.DetailMealActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:fitsSystemWindows="true"
@@ -105,7 +104,6 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textCategory"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingLeft="14dp"
@@ -141,7 +139,6 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/Country"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingLeft="14dp"
@@ -226,6 +223,7 @@
                         android:textColor="@color/colorPrimaryDark" />
 
                     <LinearLayout
+                        android:baselineAligned="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"

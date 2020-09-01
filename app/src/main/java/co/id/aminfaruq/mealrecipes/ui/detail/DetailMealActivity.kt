@@ -44,7 +44,7 @@ class DetailMealActivity : AppCompatActivity(), View.OnClickListener {
         } else {
             Toast.makeText(
                 this,
-                "No Internet Connection",
+                R.string.no_internet_connection,
                 Toast.LENGTH_SHORT
             ).show()
         }
@@ -235,7 +235,7 @@ class DetailMealActivity : AppCompatActivity(), View.OnClickListener {
                 )
                 Toast.makeText(
                     this@DetailMealActivity,
-                    "Disimpan",
+                    "Saved",
                     Toast.LENGTH_SHORT
                 ).show()
             })
@@ -247,7 +247,7 @@ class DetailMealActivity : AppCompatActivity(), View.OnClickListener {
                 )
                 Toast.makeText(
                     this@DetailMealActivity,
-                    "Dihapus",
+                    "Removed",
                     Toast.LENGTH_SHORT
                 ).show()
             })
