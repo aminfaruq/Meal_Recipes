@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import co.id.aminfaruq.core.R
 import co.id.aminfaruq.core.domain.model.Categories
-import com.bumptech.glide.Glide
+import coil.load
 import kotlinx.android.synthetic.main.item_categories.view.*
 import java.util.*
 
@@ -40,9 +40,7 @@ class CategoriesAdapter : RecyclerView.Adapter<CategoriesAdapter.ViewHolder>() {
 
         fun bind(data: Categories) {
             with(itemView) {
-                Glide.with(itemView.context)
-                    .load(data.strCategoryThumb)
-                    .into(categoryThumb)
+                categoryThumb.load(data.strCategoryThumb)
                 categoryName.text = data.strCategory
             }
         }

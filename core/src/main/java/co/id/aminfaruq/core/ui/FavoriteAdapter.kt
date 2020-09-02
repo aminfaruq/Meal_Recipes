@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import co.id.aminfaruq.core.R
 import co.id.aminfaruq.core.domain.model.DetailMeal
-import com.bumptech.glide.Glide
+import coil.load
 import kotlinx.android.synthetic.main.item_recycler_meal.view.*
 import java.util.*
 
@@ -39,9 +39,7 @@ class FavoriteAdapter(private val onItemClick: OnItemClick) :  RecyclerView.Adap
 
         fun bind(data: DetailMeal) {
             with(itemView) {
-                Glide.with(itemView.context)
-                    .load(data.strMealThumb)
-                    .into(mealThumb)
+                mealThumb.load(data.strMealThumb)
                 mealName.text = data.strMeal
 
                 view.setOnClickListener {

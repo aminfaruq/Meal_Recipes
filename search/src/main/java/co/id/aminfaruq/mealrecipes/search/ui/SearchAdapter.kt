@@ -7,7 +7,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import co.id.aminfaruq.core.domain.model.Search
 import co.id.aminfaruq.mealrecipes.search.R
-import com.bumptech.glide.Glide
+import coil.load
 import kotlinx.android.synthetic.main.item_search_meals.view.*
 import java.util.*
 
@@ -46,9 +46,7 @@ class SearchAdapter(private val onItemClick: OnItemClick) :
                     ContextCompat.getDrawable(view.context, R.drawable.photos_round_shape)
                 img_search.clipToOutline = true
                 img_search.background = drawable
-                Glide.with(itemView.context)
-                    .load(data.strMealThumb)
-                    .into(img_search)
+                img_search.load(data.strMealThumb)
                 tv_name.text = data.strMeal
                 tv_category.text = "category : ${data.strCategory}"
 

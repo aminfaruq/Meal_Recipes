@@ -12,7 +12,7 @@ import androidx.lifecycle.Observer
 import co.id.aminfaruq.core.domain.model.DetailMeal
 import co.id.aminfaruq.core.utils.isNetworkAvailable
 import co.id.aminfaruq.mealrecipes.R
-import com.bumptech.glide.Glide
+import coil.load
 import kotlinx.android.synthetic.main.activity_detail_meal.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -57,9 +57,7 @@ class DetailMealActivity : AppCompatActivity(), View.OnClickListener {
     private fun updateUI() {
         with(detailMealVM) {
             postsData.observe(this@DetailMealActivity, Observer { meals ->
-                Glide.with(this@DetailMealActivity)
-                    .load(meals[0].strMealThumb)
-                    .into(mealThumb)
+                mealThumb.load(meals[0].strMealThumb)
                 collapsing_toolbar.title = meals[0].strMeal
                 category.text = meals[0].strCategory
                 country.text = meals[0].strArea

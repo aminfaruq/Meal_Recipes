@@ -13,7 +13,7 @@ import co.id.aminfaruq.core.ui.MealsAdapter
 import co.id.aminfaruq.core.utils.isNetworkAvailable
 import co.id.aminfaruq.mealrecipes.R
 import co.id.aminfaruq.mealrecipes.ui.detail.DetailMealActivity
-import com.bumptech.glide.Glide
+import coil.load
 import kotlinx.android.synthetic.main.activity_meals.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.koin.android.ext.android.inject
@@ -31,9 +31,7 @@ class MealsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meals)
         val category = intent.getParcelableExtra<Categories>(EXTRA_CATEGORY)
-        Glide.with(this)
-            .load(category?.strCategoryThumb)
-            .into(iv_image_desc)
+        iv_image_desc.load(category?.strCategoryThumb)
         tv_description.text = category?.strCategoryDescription
 
         if (isNetworkAvailable()) {
